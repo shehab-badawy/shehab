@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="A1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddBook">
+   <children>
+      <TextField fx:id="T1" layoutX="226.0" layoutY="41.0" />
+      <TextField fx:id="T2" layoutX="226.0" layoutY="94.0" />
+      <TextField fx:id="T3" layoutX="226.0" layoutY="145.0" />
+      <TextField fx:id="T4" layoutX="226.0" layoutY="191.0" />
+      <TextField fx:id="T5" layoutX="226.0" layoutY="244.0" />
+      <TextField fx:id="T6" layoutX="226.0" layoutY="292.0" />
+      <RadioButton fx:id="R1" layoutX="165.0" layoutY="454.0" mnemonicParsing="false" text="Borrowing Only" />
+      <RadioButton fx:id="R2" layoutX="284.0" layoutY="454.0" mnemonicParsing="false" text="Purchasing Only" />
+      <RadioButton fx:id="R3" layoutX="409.0" layoutY="454.0" mnemonicParsing="false" text="Both" />
+      <RadioButton fx:id="R4" layoutX="165.0" layoutY="506.0" mnemonicParsing="false" text="Teachers Only" />
+      <RadioButton fx:id="R5" layoutX="284.0" layoutY="506.0" mnemonicParsing="false" text="All" />
+      <Label layoutX="69.0" layoutY="45.0" text="Book's Name" />
+      <Label layoutX="69.0" layoutY="98.0" text="Author's Name" />
+      <Label layoutX="69.0" layoutY="149.0" text="Publication Date" />
+      <Label layoutX="69.0" layoutY="195.0" text="Purchase Price" />
+      <Label layoutX="69.0" layoutY="248.0" text="Price" />
+      <Label layoutX="69.0" layoutY="296.0" text="Rent Price" />
+      <Label layoutX="69.0" layoutY="454.0" text="State" />
+      <Label layoutX="69.0" layoutY="506.0" text="Accessibility" />
+      <TextField fx:id="T7" layoutX="226.0" layoutY="338.0" />
+      <TextField fx:id="T8" layoutX="226.0" layoutY="387.0" />
+      <Label layoutX="70.0" layoutY="342.0" text="Quantity" />
+      <Label layoutX="70.0" layoutY="391.0" text="Publisher" />
+      <Button fx:id="Save" layoutX="110.0" layoutY="572.0" mnemonicParsing="false" onAction="#NewBook" prefHeight="26.0" prefWidth="123.0" text="Save" />
+      <Button fx:id="Close" layoutX="347.0" layoutY="572.0" mnemonicParsing="false" onAction="#NewBook" prefHeight="26.0" prefWidth="123.0" text="Close" />
+      <TextField fx:id="T9" layoutX="432.0" layoutY="244.0" prefHeight="170.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

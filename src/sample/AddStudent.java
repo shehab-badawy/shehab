@@ -4,10 +4,15 @@ import com.sun.xml.internal.ws.api.message.Message;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class AddStudent {
 
@@ -20,7 +25,20 @@ public class AddStudent {
     @FXML
     TextField T4;
 
+  static Stage stage;
 
+  /*public void initialize() throws IOException {
+      System.out.println("it is initialize");
+      stage=new Stage();
+
+  }*/
+  public void start() throws IOException {
+      stage=new Stage();
+      Parent root5 = FXMLLoader.load(getClass().getResource("AddStudent.fxml"));
+      Scene scene=new Scene(root5);
+      stage.setScene(scene);
+      stage.show();
+  }
     public void Addstudent(ActionEvent actionEvent)
     {
         Button B = (Button) actionEvent.getSource();
@@ -43,7 +61,8 @@ public class AddStudent {
 
         if (txt.equals("Close"))
         {
-            Platform.exit();
+            stage.close();
+
         }
     }
 
